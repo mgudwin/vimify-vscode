@@ -1,0 +1,75 @@
+{
+  "editor.fontFamily": "MesloLGS-NF-Regular",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // VIM
+  "vim.highlightedyank.enable": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#334FFF", "#FFFFFF"],
+  "vim.statusBarColors.insert": ["#5f0000", "#FFFFFF"],
+  "vim.statusBarColors.replace": ["#5f0000", "#FFFFFF"],
+  "vim.statusBarColors.visual": ["#5f00af", "#FFFFFF"],
+  "vim.statusBarColors.visualblock": ["#86592d", "#FFFFFF"],
+  "vim.statusBarColors.visualline": ["#005f5f", "#FFFFFF"],
+  "vim.statusBarColors.searchinprogressmode": ["#005f5f", "#FFFFFF"],
+  "vim.statusBarColors.commandlineinprogress": ["#005f5f", "#FFFFFF"],
+  "vim.statusBarColors.easymotionmode": ["#334FFF", "#FFFFFF"],
+  "vim.statusBarColors.easymotioninputmode": ["#334FFF", "#FFFFFF"],
+  "vim.statusBarColors.surroundinputmode": ["#334FFF", "#FFFFFF"],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.foreground": "#FFFFFF",
+    "statusBar.debuggingForeground": "#FFFFFF"
+  },
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right"
+}
